@@ -34,6 +34,13 @@ RETRY_CODES = {
 }
 
 
+MAX_TRANSCRIPT_CHARS = 900000
+
+
+class TranscriptTooLong(Exception):
+    pass
+
+
 def log(message):
     print(message, flush=True)
 
@@ -305,11 +312,10 @@ def get_transcript(video_id):
 
 
 def summarise(title, text):
-    if len(text) > 200000:
-        raise RuntimeError(
-            "Transcript exceeds 200,000 characters. "
-            "Stopping instead of silently summarising "
-            "only part of the video."
+    if len(text) > MAX_TRANSCRIPT_CHARS:
+        raise TranscriptTooLong(
+            f"Transcript has {len(text):,} characters, above "
+            f"the {MAX_TRANSCRIPT_CHARS:,} limit."
         )
 
     prompt = (
@@ -581,6 +587,24 @@ def main():
                 f"Email sent; video marked as processed: "
                 f"{video_id}"
             )
+
+        except TranscriptTooLong as error:
+            log(f"Skipping {video_id}: {error}")
+
+            link = (
+                "https://www.youtube.com/watch"
+                f"?v={video_id}"
+            )
+
+            send_email(
+                title,
+                f"{title}\n{link}\n\n"
+                "This video was too long to summarise "
+                f"automatically. {error}",
+            )
+
+            seen.add(video_id)
+            save_seen(seen)
 
         except Exception as error:
             failed.append(video_id)
