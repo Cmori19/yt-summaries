@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import time
 import random
@@ -10,12 +11,15 @@ import urllib.parse
 import urllib.error
 import xml.etree.ElementTree as ET
 
+from datetime import datetime, timedelta, timezone
 from email.mime.text import MIMEText
 
 
 CHANNEL_ID = "UCRvqjQPSeaWn-uEx-w0XOIg"
 MODEL = "gemini-3.5-flash-lite"
 SEEN_FILE = "seen.txt"
+ALERT_FILE = "last_failure.txt"
+ALERT_EVERY = timedelta(hours=24)
 
 ATOM = "http://www.w3.org/2005/Atom"
 
@@ -32,6 +36,13 @@ RETRY_CODES = {
     503,
     504,
 }
+
+
+MAX_TRANSCRIPT_CHARS = 900000
+
+
+class TranscriptTooLong(Exception):
+    pass
 
 
 def log(message):
@@ -305,11 +316,10 @@ def get_transcript(video_id):
 
 
 def summarise(title, text):
-    if len(text) > 200000:
-        raise RuntimeError(
-            "Transcript exceeds 200,000 characters. "
-            "Stopping instead of silently summarising "
-            "only part of the video."
+    if len(text) > MAX_TRANSCRIPT_CHARS:
+        raise TranscriptTooLong(
+            f"Transcript has {len(text):,} characters, above "
+            f"the {MAX_TRANSCRIPT_CHARS:,} limit."
         )
 
     prompt = (
@@ -582,6 +592,24 @@ def main():
                 f"{video_id}"
             )
 
+        except TranscriptTooLong as error:
+            log(f"Skipping {video_id}: {error}")
+
+            link = (
+                "https://www.youtube.com/watch"
+                f"?v={video_id}"
+            )
+
+            send_email(
+                title,
+                f"{title}\n{link}\n\n"
+                "This video was too long to summarise "
+                f"automatically. {error}",
+            )
+
+            seen.add(video_id)
+            save_seen(seen)
+
         except Exception as error:
             failed.append(video_id)
 
@@ -601,5 +629,29 @@ def main():
     log("All new videos processed successfully.")
 
 
+def should_alert():
+    """True if no failure alert has been raised in the last 24 hours."""
+    try:
+        with open(ALERT_FILE, encoding="utf-8") as file:
+            last = datetime.fromisoformat(file.read().strip())
+    except (OSError, ValueError):
+        return True
+
+    return datetime.now(timezone.utc) - last >= ALERT_EVERY
+
+
+def record_alert():
+    with open(ALERT_FILE, "w", encoding="utf-8") as file:
+        file.write(datetime.now(timezone.utc).isoformat() + "\n")
+
+
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as error:
+        if should_alert():
+            record_alert()
+            log(f"FAILURE (alerting; next alert in 24h): {error}")
+            sys.exit(1)
+
+        log(f"FAILURE (alert already sent today, not failing): {error}")
