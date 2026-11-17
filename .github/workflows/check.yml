@@ -40,7 +40,9 @@ jobs:
           if [ -f seen.txt ] || [ -f last_failure.txt ]; then
             git config user.name "summary-bot"
             git config user.email "summary-bot@users.noreply.github.com"
-            git add seen.txt last_failure.txt 2>/dev/null || true
+            for f in seen.txt last_failure.txt; do
+              if [ -f "$f" ]; then git add "$f"; fi
+            done
             if ! git diff --cached --quiet; then
               git commit -m "Update processed videos"
               git push
