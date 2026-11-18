@@ -566,8 +566,32 @@ def validate_secrets():
         )
 
 
+def save_transcript_only(selector):
+    """Manual mode: save one transcript (no summary email, no seen change)."""
+    videos = get_videos()
+
+    if selector.lower() == "latest":
+        video = videos[0] if videos else None
+    else:
+        video = next((v for v in videos if v["id"] == selector), None)
+
+    if not video:
+        raise RuntimeError(
+            f"Video not found in the feed: {selector}"
+        )
+
+    log(f"Saving transcript only: {video['title']} [{video['id']}]")
+    load_or_fetch_transcript(video)
+
+
 def main():
     validate_secrets()
+
+    selector = os.environ.get("TRANSCRIPT_ONLY", "").strip()
+
+    if selector:
+        save_transcript_only(selector)
+        return
 
     first_run = not os.path.exists(SEEN_FILE)
     seen = load_seen()

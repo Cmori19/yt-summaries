@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
+    inputs:
+      transcript_only:
+        description: "Save a transcript only (video id, or 'latest'); no summary email"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -33,6 +38,7 @@ jobs:
           SUPADATA_KEY: ${{ secrets.SUPADATA_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TRANSCRIPT_ONLY: ${{ github.event.inputs.transcript_only }}
 
       - name: Install chart libraries
         if: always()
