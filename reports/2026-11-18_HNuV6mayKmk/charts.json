@@ -1,0 +1,131 @@
+[
+ {
+  "id": "btc_daily",
+  "title": "Bitcoin with the levels Ben names",
+  "symbol": "BTC-USD",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 80000,
+    "label": "Bulls' target",
+    "kind": "resistance"
+   },
+   {
+    "price": 60000,
+    "label": "Bears' target / summer low",
+    "kind": "support"
+   },
+   {
+    "price": 54000,
+    "label": "Realized price",
+    "kind": "support"
+   },
+   {
+    "price": 37670,
+    "label": "Balance price",
+    "kind": "target"
+   }
+  ],
+  "caption": "The four BTC price zones from the video: $80K, $60K, realized price ~$54K and balance price ~$37.7K."
+ },
+ {
+  "id": "btc_gold",
+  "title": "Bitcoin / gold ratio (ounces of gold per BTC)",
+  "symbol": "BTC-USD/GC=F",
+  "interval": "1wk",
+  "period": "5y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 10,
+    "label": "Ben's low (ratio 10)",
+    "kind": "target"
+   }
+  ],
+  "caption": "Ben expects BTC/gold to break lower and bottom near 10; with gold at ~$3,783 that is ~$37.8K."
+ },
+ {
+  "id": "dxy",
+  "title": "US dollar index (DXY)",
+  "symbol": "DX-Y.NYB",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 103,
+    "label": "Short-term target",
+    "kind": "target"
+   },
+   {
+    "price": 105,
+    "label": "Long-term target",
+    "kind": "target"
+   },
+   {
+    "price": 106,
+    "label": "Long-term target",
+    "kind": "target"
+   }
+  ],
+  "caption": "He expects DXY to rise to 103, then 105-106 (peak hawkishness)."
+ },
+ {
+  "id": "gold",
+  "title": "Gold futures",
+  "symbol": "GC=F",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 3783,
+    "label": "Gold when Ben recorded",
+    "kind": "level"
+   }
+  ],
+  "caption": "Gold has not found a low yet; Ben says it normally bottoms before Bitcoin in midterm years."
+ },
+ {
+  "id": "nasdaq",
+  "title": "Nasdaq Composite",
+  "symbol": "^IXIC",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Ben notes the Nasdaq already broke its summer low and 2026 resembles 2018."
+ },
+ {
+  "id": "proxies",
+  "title": "Coinbase (BTC proxy)",
+  "symbol": "COIN",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Coinbase broke below its February and summer lows around when stablecoin supply did."
+ },
+ {
+  "id": "silver",
+  "title": "Silver futures",
+  "symbol": "SI=F",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Same Q1 low / summer low / Q4 low pattern as gold; Ben's 2011 silver analogue is his main worry chart."
+ },
+ {
+  "id": "alts",
+  "title": "ETH / BTC (rough proxy for alts vs Bitcoin)",
+  "symbol": "ETH-USD/BTC-USD",
+  "interval": "1wk",
+  "period": "5y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Ben says alts bleed against BTC. He used a broader alt/BTC ratio; ETH/BTC is only a proxy."
+ }
+]
