@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
+    inputs:
+      transcript_only:
+        description: "Save a transcript only (video id, or 'latest'); no summary email"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -33,18 +38,29 @@ jobs:
           SUPADATA_KEY: ${{ secrets.SUPADATA_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TRANSCRIPT_ONLY: ${{ github.event.inputs.transcript_only }}
+
+      - name: Install chart libraries
+        if: always()
+        run: pip install --quiet matplotlib numpy
+
+      - name: Email finished analyses with charts
+        if: always()
+        run: python render_report.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
 
       - name: Save processed videos
         if: always()
         run: |
-          if [ -f seen.txt ] || [ -f last_failure.txt ]; then
-            git config user.name "summary-bot"
-            git config user.email "summary-bot@users.noreply.github.com"
-            for f in seen.txt last_failure.txt; do
-              if [ -f "$f" ]; then git add "$f"; fi
-            done
-            if ! git diff --cached --quiet; then
-              git commit -m "Update processed videos"
-              git push
-            fi
+          git config user.name "summary-bot"
+          git config user.email "summary-bot@users.noreply.github.com"
+          for f in seen.txt last_failure.txt transcripts reports; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Update processed videos"
+            git pull --rebase --autostash origin main
+            git push
           fi
