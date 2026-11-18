@@ -19,6 +19,7 @@ CHANNEL_ID = "UCRvqjQPSeaWn-uEx-w0XOIg"
 MODEL = "gemini-3.5-flash-lite"
 SEEN_FILE = "seen.txt"
 ALERT_FILE = "last_failure.txt"
+TRANSCRIPT_DIR = "transcripts"
 ALERT_EVERY = timedelta(hours=24)
 
 ATOM = "http://www.w3.org/2005/Atom"
@@ -315,6 +316,51 @@ def get_transcript(video_id):
     )
 
 
+def transcript_path(video):
+    date = (video.get("published") or "")[:10] or "unknown-date"
+    return os.path.join(
+        TRANSCRIPT_DIR,
+        f"{date}_{video['id']}.txt",
+    )
+
+
+def load_or_fetch_transcript(video):
+    """Reuse a saved transcript (no Supadata credit); else fetch and save."""
+    path = transcript_path(video)
+
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as file:
+            saved = file.read()
+
+        marker = "\n---\n"
+
+        if marker in saved:
+            text = saved.split(marker, 1)[1].strip()
+
+            if text:
+                log(f"Using saved transcript: {path}")
+                return text
+
+    text = get_transcript(video["id"])
+
+    os.makedirs(TRANSCRIPT_DIR, exist_ok=True)
+
+    header = (
+        f"title: {video['title']}\n"
+        f"id: {video['id']}\n"
+        f"published: {video['published']}\n"
+        "link: https://www.youtube.com/watch"
+        f"?v={video['id']}\n"
+    )
+
+    with open(path, "w", encoding="utf-8") as file:
+        file.write(header + "---\n" + text + "\n")
+
+    log(f"Saved transcript: {path} ({len(text):,} characters)")
+
+    return text
+
+
 def summarise(title, text):
     if len(text) > MAX_TRANSCRIPT_CHARS:
         raise TranscriptTooLong(
@@ -567,7 +613,7 @@ def main():
         log(f"Processing: {title} [{video_id}]")
 
         try:
-            text = get_transcript(video_id)
+            text = load_or_fetch_transcript(video)
             summary = summarise(title, text)
 
             link = (
