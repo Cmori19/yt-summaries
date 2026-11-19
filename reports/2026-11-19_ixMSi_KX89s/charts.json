@@ -1,0 +1,6 @@
+[
+ {"id":"btc","title":"Bitcoin, 6 months, with the levels Ben names","symbol":"BTC-USD","interval":"1d","period":"6mo","indicators":[],"levels":[{"price":63842,"label":"BTC high on SpaceX IPO day (11 Jun)","kind":"level"},{"price":63995,"label":"BTC high on recording day","kind":"level"}],"caption":"Ben says BTC is trading at the same level as on SpaceX IPO day, and that BTC fell to a lower low about 18-20 days later."},
+ {"id":"btc_rsi","title":"Bitcoin daily RSI (14)","symbol":"BTC-USD","interval":"1d","period":"1y","indicators":["rsi14"],"levels":[],"caption":"Daily RSI is ~24 (oversold), but Ben warns crashes often start from oversold readings (Nov 2018: 17, then 9)."},
+ {"id":"nasdaq","title":"Nasdaq Composite","symbol":"^IXIC","interval":"1d","period":"1y","indicators":[],"levels":[],"caption":"Ben expects a launch-day rally in Nasdaq futures (+2%) then a cooling, as after SpaceX's IPO (+3% futures, lower low ~32 trading days later)."},
+ {"id":"coin","title":"Coinbase (IPO analogue)","symbol":"COIN","interval":"1d","period":"2y","indicators":[],"levels":[],"caption":"Ben cites Coinbase's 2021 IPO as an example of surge, ~month-later low, rally, then a lower low; COIN is again falling into December, as in 2022."}
+]
