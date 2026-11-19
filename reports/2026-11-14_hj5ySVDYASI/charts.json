@@ -1,0 +1,63 @@
+[
+ {
+  "id": "btcw",
+  "title": "Bitcoin weekly with 200-week MA",
+  "symbol": "BTC-USD",
+  "interval": "1wk",
+  "period": "max",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": true,
+  "caption": "BTC is below the 200-week MA; in 2015 and 2020 it fell ~30% below it."
+ },
+ {
+  "id": "btcd",
+  "title": "Bitcoin daily with 200-day MA",
+  "symbol": "BTC-USD",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": false,
+  "caption": "His trusted 200-day MA gave no support; a fall 30% below it would end his wait for lower lows."
+ },
+ {
+  "id": "btcspx",
+  "title": "Bitcoin / S&P 500",
+  "symbol": "BTC-USD/^GSPC",
+  "interval": "1wk",
+  "period": "5y",
+  "indicators": [],
+  "levels": [],
+  "log": false,
+  "caption": "BTC is down ~32% versus the S&P this year."
+ },
+ {
+  "id": "btcgold",
+  "title": "Bitcoin / gold",
+  "symbol": "BTC-USD/GC=F",
+  "interval": "1wk",
+  "period": "5y",
+  "indicators": [],
+  "levels": [],
+  "log": false,
+  "caption": "BTC is down ~16.5% versus gold this year, as he forecast."
+ },
+ {
+  "id": "ndx",
+  "title": "Nasdaq Composite",
+  "symbol": "^IXIC",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": false,
+  "caption": "Nasdaq is ~15% off its high, within his 10&ndash;20% Q4 expectation."
+ }
+]

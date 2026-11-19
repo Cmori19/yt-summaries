@@ -1,0 +1,37 @@
+[
+ {
+  "id": "btc",
+  "title": "Bitcoin with the range he describes",
+  "symbol": "BTC-USD",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 80000,
+    "label": "Scenario high",
+    "kind": "resistance"
+   },
+   {
+    "price": 60000,
+    "label": "Scenario low",
+    "kind": "support"
+   }
+  ],
+  "log": false,
+  "caption": "The hypothetical $60K -> $80K -> lower path."
+ },
+ {
+  "id": "silver",
+  "title": "Silver futures (his range analogue)",
+  "symbol": "SI=F",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [
+   "sma50"
+  ],
+  "levels": [],
+  "log": false,
+  "caption": "Silver ranged low-high-low repeatedly around its 50-day MA before breaking out."
+ }
+]

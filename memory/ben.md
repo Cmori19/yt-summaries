@@ -6,7 +6,17 @@ as of each video date, not facts. Updated after every analysed video.
 ## Current stance
 - **2026-11-18 (Bitcoin: The Bull's Dilemma):** cautiously bearish; would like to flip bullish soon but says reset conditions are unmet (MVRV-Z not below 0, price above realized price, on-chain risk 0.18 vs usual <0.1, stablecoin cap breaking down, gold not yet bottomed). Q4 of a midterm year is a "window of weakness" of ~7-8 more weeks, maybe to Jan 2027. If no drop in that window, many bears turn bulls.
 
+## Earlier videos (analysed after the 18 Nov one, chronological)
+- 2026-11-03 Midterms and Markets: regime stats; worst S&P combo = Rep president + Dem Congress (12m avg ~4%); 2018 parallel; BTC Trump-2/Biden-like path means rise from 2027.
+- 2026-11-05 Stock Market Faces Reality: three 2018 parallels (hawkish Fed ~75% Dec hike odds, tariffs, tech/AI regulation) + Iran war; Nasdaq -4% testing July low; "if Nasdaq can, BTC can".
+- 2026-11-13 What If Bitcoin Does This: short clip; scenario 60K -> 80K -> OpenAI IPO sell-off; silver range analogue.
+- 2026-11-14 Capitulation Spiral: BTC <66K and below 200WMA; 2015/2020 fake-out analogue; low ~day 94 after first hike (~mid-Dec), day 59 at recording; whales absent; BTC -32% vs S&P, -16.5% vs gold, -48% vs energy YTD.
+
 ## Predictions log
+| 2026-11-14 Capitulation Spiral | BTC | Capitulation low, maybe one bounce, then final drop, then rise | no price; stops waiting if ~30% below 200DMA | low ~day 94 after first hike (~mid-Dec 2026), maybe lower before year-end | base case | open | BTC ~64-65K mid-Nov (Cointelegraph/Fortune) |
+| 2026-11-05 Stock Market Faces Reality | Nasdaq/S&P, BTC | Q4 drop like 2018; BTC can test summer low like Nasdaq | no price | Q4 2026 | Fed hike Dec ~75% priced | open | Nasdaq -15% by 14 Nov |
+| 2026-11-13 What If | BTC | Alt scenario 60K -> 80K -> sell-off (OpenAI IPO) | 60K/80K | later | not base case | open | repeated 18 Nov |
+| 2026-11-03 Midterms | S&P | Dem-controlled Congress historically weakest regime (~4% 12m avg) | none | 12m | statistical base rate, not call | open | |
 | Date / video | Asset | Call | Target / move | Timeframe | Conditions | Status | Note |
 |---|---|---|---|---|---|---|---|
 | 2026-11-18 Bull's Dilemma | BTC | More downside in Q4 (between FTX-style and 2018 drop) | no exact price | rest of 2026, maybe to Jan 2027 | base case; avg Sept-midterm hike path is flat ~1.5m then down | open | BTC ~64K on 16 Nov (Fortune) |
@@ -40,10 +50,11 @@ as of each video date, not facts. Updated after every analysed video.
 | DXY | ~104 (2026-11-18) | 105-106 = peak hawkishness |
 
 ## Recurring themes
+- 200-week MA is not a guaranteed floor (2015, 2020 went ~30% below); whales usually appear at Q4 lows (absent so far, 14 Nov); capitulation = one bounce then final drop.
 - Midterm-year Q4 weakness; February / summer / Q4 low pattern across assets.
 - Commodities (gold, silver) tend to bottom before BTC in midterm years.
 - 2018 and 2022 analogues; first-hike seasonality; hawkish dollar drains liquidity.
 - On-chain metrics must reset before a bull market starts ("bull's dilemma"; "altcoiner's dilemma").
 
 ## Changes of view
-- (first video analysed; none yet)
+- 2026-11-14: more specific on timing than 5 Nov (low ~mid-Dec, day 94 after first hike); 2026-11-03 was neutral/statistical, 2026-11-05 turned bearish on 2018 parallels.

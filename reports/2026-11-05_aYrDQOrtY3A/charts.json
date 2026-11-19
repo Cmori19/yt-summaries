@@ -1,0 +1,56 @@
+[
+ {
+  "id": "ndx",
+  "title": "Nasdaq Composite",
+  "symbol": "^IXIC",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": false,
+  "caption": "Ben says the Nasdaq (down ~4% that day) is testing its July low, as in Q4 2018."
+ },
+ {
+  "id": "spx2018",
+  "title": "S&P 500 weekly",
+  "symbol": "^GSPC",
+  "interval": "1wk",
+  "period": "10y",
+  "indicators": [],
+  "levels": [],
+  "log": false,
+  "caption": "Used for the 2018 template: a bounce after the midterms, then a ~20% Q4 drop."
+ },
+ {
+  "id": "oil",
+  "title": "Brent crude",
+  "symbol": "BZ=F",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 100,
+    "label": "Brent ~100",
+    "kind": "level"
+   }
+  ],
+  "log": false,
+  "caption": "He cites Brent ~100 / WTI ~90 as evidence markets think the Iran war is over."
+ },
+ {
+  "id": "btc",
+  "title": "Bitcoin",
+  "symbol": "BTC-USD",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": false,
+  "caption": "If the Nasdaq can test its July low, he asks why BTC cannot."
+ }
+]

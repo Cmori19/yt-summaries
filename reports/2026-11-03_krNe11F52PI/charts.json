@@ -1,0 +1,28 @@
+[
+ {
+  "id": "spx",
+  "title": "S&P 500 (2018 vs 2026 context)",
+  "symbol": "^GSPC",
+  "interval": "1wk",
+  "period": "10y",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": false,
+  "caption": "Ben compares the 2026 S&P path with Trump's first term and the Q1/Q4 2018 drawdowns."
+ },
+ {
+  "id": "btc",
+  "title": "Bitcoin weekly",
+  "symbol": "BTC-USD",
+  "interval": "1wk",
+  "period": "5y",
+  "indicators": [
+   "sma200"
+  ],
+  "levels": [],
+  "log": true,
+  "caption": "He says BTC has lagged in this term versus earlier cycles and a Biden-like path would mean a rise from 2027."
+ }
+]
