@@ -1,0 +1,59 @@
+[
+ {
+  "id": "btc",
+  "title": "Bitcoin, 1 year, with levels Ben names",
+  "symbol": "BTC-USD",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 55000,
+    "label": "~55K at recording",
+    "kind": "level"
+   },
+   {
+    "price": 54000,
+    "label": "Realized price ~54K",
+    "kind": "target"
+   },
+   {
+    "price": 37300,
+    "label": "Balance price ~37.3K",
+    "kind": "target"
+   }
+  ],
+  "log": false,
+  "caption": "BTC made the lower low and sits just above the realized price; the balance price is far lower."
+ },
+ {
+  "id": "nasdaq",
+  "title": "Nasdaq Composite, 2 years",
+  "symbol": "^IXIC",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Ben compares Nasdaq's ~-20% 2026 path to -23% in 2018."
+ },
+ {
+  "id": "silver",
+  "title": "Silver futures, 1 year",
+  "symbol": "SI=F",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Ben thinks silver shows where BTC is headed and may bottom soon."
+ },
+ {
+  "id": "gold",
+  "title": "Gold futures, 1 year",
+  "symbol": "GC=F",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Gold tends to bottom before BTC in midterm years."
+ }
+]

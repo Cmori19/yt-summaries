@@ -8,6 +8,9 @@ as of each video date, not facts. Updated after every analysed video.
 
 - **2026-11-19 (The Anthropic IPO):** same cautious/bearish line; applies SpaceX IPO template (surge, then ~50% drop, drop = better entry) to Anthropic ($83/share, ~$1.5T). BTC ~64K ~ same as SpaceX IPO day (11 Jun); BTC lower low expected ~18-20 days after IPO = ~9 Dec FOMC; 21st-of-month tops; daily RSI ~24 but oversold != bounce.
 
+- **2026-11-20 (Bitcoin Drops Below $60k):** BTC ~60K then <60K; Q4 midterm dump is "normal"; five base rates (Q4 midterm, shutdown, first hike, Sept hike, realized price) all point down; on-chain risk ~0.175, MVRV-Z not <0 (reading garbled); 30-40K "within historical norms" (not a call); metals must bottom first.
+- **2026-11-21 (Bitcoin: The Lower Low, Arabic-translated transcript):** BTC ~55K, lower low made; realized ~54K close, balance ~37.3K; on-chain risk 0.149; bottom within ~7 weeks (to mid-Jan), logically ~2 weeks / Dec FOMC; day 66 after first hike (2022 low day 49, 2018 ~day 80); no panic selling, DCA; reset positive for 2027; admits Q3 rally height was underestimated (expected mid-late 70s, got 80s).
+
 ## Earlier videos (analysed after the 18 Nov one, chronological)
 - 2026-11-03 Midterms and Markets: regime stats; worst S&P combo = Rep president + Dem Congress (12m avg ~4%); 2018 parallel; BTC Trump-2/Biden-like path means rise from 2027.
 - 2026-11-05 Stock Market Faces Reality: three 2018 parallels (hawkish Fed ~75% Dec hike odds, tariffs, tech/AI regulation) + Iran war; Nasdaq -4% testing July low; "if Nasdaq can, BTC can".
@@ -22,6 +25,12 @@ as of each video date, not facts. Updated after every analysed video.
 | 2026-11-05 Stock Market Faces Reality | Nasdaq/S&P, BTC | Q4 drop like 2018; BTC can test summer low like Nasdaq | no price | Q4 2026 | Fed hike Dec ~75% priced | open | Nasdaq -15% by 14 Nov |
 | 2026-11-13 What If | BTC | Alt scenario 60K -> 80K -> sell-off (OpenAI IPO) | 60K/80K | later | not base case | open | repeated 18 Nov |
 | 2026-11-03 Midterms | S&P | Dem-controlled Congress historically weakest regime (~4% 12m avg) | none | 12m | statistical base rate, not call | open | |
+| 2026-11-21 Lower Low | BTC | Cycle low soon | none | within ~7 weeks, maybe ~2 weeks / Dec FOMC; to mid-Jan | pressed for a guess; not a price call | open | BTC ~55K at recording |
+| 2026-11-21 | BTC | Realized ~54K likely reached; balance ~37.3K possible, not certain | 54K / 37.3K | n/a | possibility | open | |
+| 2026-11-21 | Silver | Capitulation, bottom soon, BTC may follow pattern (bounce then lower) | none | soon | | open | silver ~41 (doubtful) |
+| 2026-11-20 Drops Below 60K | BTC | Normal to hit low 50s; 30-40K within historical norms | 54K realized | Q4 2026 | not a call | open (60K lost) | |
+| 2026-11-19 bounce to ~21 Nov | BTC | possible bounce | n/a | to 21 Nov | | missed so far | BTC fell to ~55K on 20 Nov |
+| 2026-11-18 60K retest | BTC | back to lows ~60K | 60K | | | hit | BTC below 60K 20 Nov |
 | Date / video | Asset | Call | Target / move | Timeframe | Conditions | Status | Note |
 |---|---|---|---|---|---|---|---|
 | 2026-11-18 Bull's Dilemma | BTC | More downside in Q4 (between FTX-style and 2018 drop) | no exact price | rest of 2026, maybe to Jan 2027 | base case; avg Sept-midterm hike path is flat ~1.5m then down | open | BTC ~64K on 16 Nov (Fortune) |
@@ -36,8 +45,9 @@ as of each video date, not facts. Updated after every analysed video.
 | Asset | Level | Type | First mentioned | Last mentioned | Why it matters |
 |---|---|---|---|---|---|
 | BTC | 80K | bulls' target | 2026-11-18 | 2026-11-18 | exceeded briefly in Q3 |
-| BTC | 60K | bears' target / Feb and summer lows | 2026-11-18 | 2026-11-18 | retest in main and alt scenarios |
-| BTC | ~54K | realized price | 2026-11-18 | 2026-11-18 | BTC usually goes below at cycle lows |
+| BTC | 60K | bears' target / Feb and summer lows | 2026-11-18 | 2026-11-20 | lost 20 Nov |
+| BTC | ~55K | recording price | 2026-11-21 | 2026-11-21 | lower low; ~54K realized right below |
+| BTC | ~54K | realized price | 2026-11-18 | 2026-11-21 | BTC usually goes below at cycle lows |
 | BTC | ~37.7K | balance price | 2026-11-18 | 2026-11-18 | 2018-19 analogue (add a zero) |
 | BTC/gold | ~10 | ratio low | 2026-11-18 | 2026-11-18 | maps to ~37.8K at gold 3,783 |
 | Stablecoin mkt cap | 305B -> 293B | broken support | 2026-11-18 | 2026-11-18 | liquidity leaving |
@@ -48,9 +58,9 @@ as of each video date, not facts. Updated after every analysed video.
 |---|---|---|
 | BTC daily RSI | ~24 (2026-11-19); Nov 2018 went 17 then 9 | not a bounce signal on its own |
 | BTC ETF flows | outflows -306M (18 Nov), -239M (17 Nov) (2026-11-19) | stabilisation |
-| MVRV Z-score | not below 0 (2026-11-18) | drop below 0 |
+| MVRV Z-score | not below 0 (2026-11-20; reading garbled '27') | drop below 0 |
 | Realized price | ~54K, not breached (2026-11-18) | BTC below it |
-| On-chain composite risk | 0.18 (2026-11-18) | below 0.1 |
+| On-chain composite risk | 0.149 (2026-11-21; 0.175 on 20 Nov, 0.18 on 18 Nov) | below 0.1 |
 | Stablecoin market cap | ~293B, below Feb/Jul lows (2026-11-18) | stabilisation/recovery |
 | BTC / USDT dominance | at Nov 2018 / Mar 2022-like level (2026-11-18) | drop to historic lows (overstated) |
 | BTC / gold | swept high, not low (2026-11-18) | low near ratio 10 |
@@ -67,3 +77,4 @@ as of each video date, not facts. Updated after every analysed video.
 ## Changes of view
 - 2026-11-14: more specific on timing than 5 Nov (low ~mid-Dec, day 94 after first hike); 2026-11-03 was neutral/statistical, 2026-11-05 turned bearish on 2018 parallels.
 - 2026-11-19: adds IPO-cycle timing to the mid-Dec low view (9 Dec FOMC); no change of direction.
+- 2026-11-20/21: bottom window now explicit (~7 weeks, maybe 2 weeks); tone shifts to "don't panic sell, DCA, reset is bullish for 2027"; adds hike-day count (day 66). Admits underestimating Q3 rally height.

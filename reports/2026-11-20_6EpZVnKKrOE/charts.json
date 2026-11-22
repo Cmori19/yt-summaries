@@ -1,0 +1,59 @@
+[
+ {
+  "id": "btc",
+  "title": "Bitcoin, 2 years, with levels Ben names",
+  "symbol": "BTC-USD",
+  "interval": "1d",
+  "period": "2y",
+  "indicators": [],
+  "levels": [
+   {
+    "price": 60000,
+    "label": "60K (lost during recording)",
+    "kind": "support"
+   },
+   {
+    "price": 54000,
+    "label": "Realized price ~54K",
+    "kind": "target"
+   },
+   {
+    "price": 37300,
+    "label": "Balance price ~37K (mentioned next video)",
+    "kind": "target"
+   }
+  ],
+  "log": false,
+  "caption": "BTC fell through 60K; the realized price just under 54K is where BTC has gone in nearly every bear market."
+ },
+ {
+  "id": "nasdaq",
+  "title": "Nasdaq Composite, 1 year",
+  "symbol": "^IXIC",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Ben: Nasdaq is below its summer low, so why not BTC."
+ },
+ {
+  "id": "gold",
+  "title": "Gold futures, 1 year",
+  "symbol": "GC=F",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Ben: gold tends to bottom before BTC in midterm years; it is still making Q4 lows."
+ },
+ {
+  "id": "silver",
+  "title": "Silver futures, 1 year",
+  "symbol": "SI=F",
+  "interval": "1d",
+  "period": "1y",
+  "indicators": [],
+  "levels": [],
+  "caption": "Silver also below its summer low."
+ }
+]
